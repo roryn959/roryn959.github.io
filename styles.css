@@ -8,6 +8,7 @@ p {
     font-family: Garamond, 'Times New Roman', Times, serif;
     font-size: 20px;
     color: #3f2b00dc;
+    margin-top: 0px;
 }
 
 .tableLink {
@@ -48,6 +49,10 @@ body {
     color: #0050a0;
     text-align: left;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.header a {
+    color: #0050a0;
 }
 
 .mainDiv {

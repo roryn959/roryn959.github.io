@@ -25,25 +25,52 @@
                     <th>Description</th>
                 </tr>
 
-                <!-- Sudoku Solver -->
+                <!-- Wordle Solver -->
                 <tr>
-                    <td><a href="https://github.com/roryn959/Sudoku-solver" class="tableLink">Sudoku Solver</a></td>
-                    <td>26/11/2019</td>
-                    <td>An early project in which a file containing a sudoku is read and then (hopefully) solved. Created as an introduction to object-oriented programming.</td>
+                    <td><a href="https://github.com/roryn959/WordleSolver" class="tableLink">Wordle Solver</a></td>
+                    <td>04/02/2022</td>
+                    <td>
+                        A program to solve the game Wordle. Made as a small side project to practice Information Theory, this program uses the Selenium library
+                        to navigate to the Wordle website (using a Chrome driver) and will proceed to solve the day's Wordle. *Disclaimer* - the logic of this
+                        solver works on an assumption about the way repeated letters are represented on the Wordle website, and assumption which turned out to
+                        differ from the way the website actually implements the game. As a result, this program may fail to solve the word if it contains any
+                        repeated letters.
+                    </td>
+                </tr>
+
+                <!-- Spiral Classifier -->
+                <tr>
+                    <td><a href="https://github.com/roryn959/SpiralNeuralNet" class="tableLink">Spiral Classification Neural Network</a></td>
+                    <td>19/10/2021</td>
+                    <td>My first neural network, which classifies points in a spiral. Heavily supervised by the book 'Neural Networks from Scratch in Python' by Harrison Kinsley. An introduction to concepts within Machine Learning such as efficient matrix manipulation, activation functions, different network depths and sizes, and backpropagation using optimisation techniques like momentum, cache, and learning rate decay.</td>
+                </tr>
+
+                <!-- Tetris Autoplayer -->
+                <tr>
+                    <td><a href="https://github.com/roryn959/Tetris-Autoplayer" class="tableLink">Tetris Autoplayer</a></td>
+                    <td>20/11/2020</td>
+                    <td>A program which will play tetris. This was a university project - it was a competition to create the highest scoring tetris AI in the year (this project scored in the top 1.3% of my course). To find the optimal weights with which the algorithm evaluates game states, I used a Genetic Algorithm approach; training of the algorithm to find the optimal weights involved running a process mimicking natural selection. Different mutations of the automated player were pitted against each other for around five hours - the weaker players were removed from the competing population whilst the winners remained and were combined to create a stronger new population for the next round. The tetris game itself was pre-made by my professor - I only implemented 'player.py'.</td>
                 </tr>
 
                 <!-- Minesweeper -->
                 <tr>
                     <td><a href="https://github.com/roryn959/Minesweeper-tkinter" class="tableLink">Minesweeper</a></td>
-                    <td>10/01/2019</td>
-                    <td>A minesweeper game using the tkinter library. My first investigation into Game Theory and AI, using the Minimax algorithm with Alphabeta pruning. Includes three difficulties.</td>
+                    <td>24/06/2020</td>
+                    <td>A simple minesweeper game using the tkinter library. Created simply to practice my Tkinter skills.</td>
                 </tr>
 
                 <!-- Hours Logger -->
                 <tr>
                     <td><a href="https://github.com/roryn959/Hours-Logger" class="tableLink">Work Hours Logger</a></td>
-                    <td>16/01/2020</td>
+                    <td>16/05/2020</td>
                     <td>A simple application to track shifts worked and paychecks earned, to prevent being underpaid. Made by request for a friend, as some practice with the tkinter library.</td>
+                </tr>
+
+                <!-- Chess Engine -->
+                <tr>
+                    <td><a href="https://github.com/roryn959/knifefish" class="tableLink">Chess Engine</a></td>
+                    <td>15/04/2020</td>
+                    <td>An engine to play and evaluate chess positions, as well as a tkinter interface through which to interact with the program. Uses techniques including minimax, alpha-beta pruning, and quiescence search. Created as A-level Coursework. During testing of difficulty 3 playing 3 minute blitz chess, the AI reached a peak of ~1600 rating on Chess.com.</td>
                 </tr>
 
                 <!-- Noughts and Crosses Player -->
@@ -53,32 +80,11 @@
                     <td>A noughts and crosses game in which you play against an impossible-to-beat AI. Created as an introduction to game theory and the minimax algorithm (with alpha-beta pruning) to prepare for making a chess engine.</td>
                 </tr>
 
-                <!-- Chess Engine -->
+                <!-- Sudoku Solver -->
                 <tr>
-                    <td><a href="https://github.com/roryn959/knifefish" class="tableLink">Chess Engine</a></td>
-                    <td>15/03/2020</td>
-                    <td>An engine to play and evaluate chess positions, as well as a tkinter interface through which to interact with the program. Uses techniques including minimax, alpha-beta pruning, and quiescence search. Created as A-level Coursework. During testing of difficulty 3 playing 3 minute blitz chess, the AI reached a peak of ~1600 rating on Chess.com.</td>
-                </tr>
-
-                <!-- Tetris Autoplayer -->
-                <tr>
-                    <td><a href="https://github.com/roryn959/Tetris-Autoplayer" class="tableLink">Tetris Autoplayer</a></td>
-                    <td>20/11/2020</td>
-                    <td>A program which will play tetris. This was a university project - it was a competition to create the highest scoring tetris AI in the year (this project scored in the top 1.3% of my course). To find the optimal weights with which the algorithm evaluates game states, I used a Genetic Algorithm approach; training of the algorithm to find the optimal weights involved running a process mimicking natural selection. Different mutations of the automated player were pitted against each other for around five hours - the weaker players were removed from the competing population whilst the winners remained and were combined to create a stronger new population for the next round. The tetris game itself was pre-made by my professor - I only implemented 'player.py'.</td>
-                </tr>
-                
-                <!-- Spiral Classifier -->
-                <tr>
-                    <td><a href="https://github.com/roryn959/SpiralNeuralNet" class="tableLink">Spiral Classification Neural Network</a></td>
-                    <td>19/10/2021</td>
-                    <td>My first neural network, which classifies points in a spiral. Heavily supervised by the book 'Neural Networks from Scratch in Python' by Harrison Kinsley. An introduction to concepts within Machine Learning such as efficient matrix manipulation, activation functions, different network depths and sizes, and backpropagation using optimisation techniques like momentum, cache, and learning rate decay.</td>
-                </tr>
-                
-                <!-- Wordle Solver -->
-                <tr>
-                    <td><a href="https://github.com/roryn959/WordleSolver" class="tableLink">Wordle Solver</a></td>
-                    <td>04/02/2022</td>
-                    <td>A program to solve the game Wordle. Made as a small side project to pass the time, this program works by eliminating possibilities from a list of words to the point where a hidden word may be guessed. To come up with the optimal guess, letters are scored based on their cumulative frequency within the possible words to both aim for a winning guess and gain the most information.</td>
+                    <td><a href="https://github.com/roryn959/Sudoku-solver" class="tableLink">Sudoku Solver</a></td>
+                    <td>26/11/2019</td>
+                    <td>An early project in which a file containing a sudoku is read and then (hopefully) solved. Created as an introduction to object-oriented programming.</td>
                 </tr>
                 
             </table>
