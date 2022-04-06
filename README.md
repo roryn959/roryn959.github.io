@@ -1,5 +1,4 @@
-# My Portfolio
-## Rory Nicholas
+> # Rory Nicholas
 
 Hello! This is the repository for my portfolio.
 
