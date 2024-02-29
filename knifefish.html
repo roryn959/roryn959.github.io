@@ -128,13 +128,13 @@
       <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
         <ol class="breadcrumb m-0">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Sketch Completion with Machine Learning</li>
+          <li class="breadcrumb-item active" aria-current="page">Knifefish</li>
         </ol>
       </nav>
     </div>
 
     <!-- Accordion -->
-    <h2 class="m-4">Sketch Completion with Machine Learning</h2>
+    <h2 class="m-4">Knifefish Chess Engine</h2>
     <div class="accordion accordion-flush" id="accordionFlushExample">
       <div class="accordion-item">
         <h2 class="accordion-header" id="flush-headingOne">
@@ -145,18 +145,9 @@
         <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
           <div class="accordion-body">
             <h3 class="lead">
-            There are many examples of recent research in the field of image generation using machine learning. However, the vast majority of
-            these projects are focused around pixel-based image formats. To that end, this project aimed to build upon vector-based image generation
-            research with the idea that this image format follows human intuition more closely. This may then allow the creation of tools which may work
-            more closely with people to provide assistance and inspiration in the sketching process.
-            </h3>
-            <h3 class="lead">
-            Specifically, this may assist those learning to draw or who may otherwise find sketching difficult; in particular, those who have a physical or
-            mental disability which may make it difficult to put onto paper exactly the picture they had in mind (this project was made as a dissertation
-            project with the assistance of the UCL Global Disability Innovation Hub).
-            </h3>
-            <h3 class="lead">
-              The project was made by adapting the <a href="https://arxiv.org/abs/1704.03477">Sketch-RNN</a> framework.
+            This project contains two chess engines. I originally wrote it in Python for a school project, before re-writing it years later in Java in order
+            to improve its speed as well as improve the code quality and introduce new concepts for a higher playing skill. It includes a chess-playing
+            application with an AI opponent of variable difficulty.
             </h3>
           </div>
         </div>
@@ -170,25 +161,23 @@
         <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
           <div class="accordion-body">
             <h3 class="lead">
-              The model used in this project was a bi-directional variational autoencoder (VAE) using long-short term memory (LSTM) recurrent neural networks
-              (RNNs). The input to the network was a series of five-dimensional vectors to represent strokes. After encoding, Gaussian noise and
-              normalisation is applied to the latent vector to provide a well-formed and regularised latent space. The output of the model was a series of
-              six-dimensional vectors representing a Gaussian mixture model (GMM) to provide a probability function of the stroke to be made at each point
-              of the output sequence.
+              The engine uses a Minimax backtracking algorithm alongside Alphabeta pruning. In this way, the AI will exhaustively search through all
+              positions up to a certain number of moves away (or a terminal game state).
             </h3>
             <h3 class="lead">
-              The idea behind this tool is that a user may input some strokes into the sketching window. They then may request that their sketch is either
-              re-interpreted or completed by a pre-trained model (in this case the model is trained on owls). The user is then shown a grid of the resulting
-              sketches, each sampled around a focal point in the model's latent space.
-              </h3>
-            <h3 class="lead">
-              The user may then select their favourite sketch, according to which the focal point is moved such that newly generated sketches resemble their
-              favourite more closely. This process may be repeated until the user finds a satisfactory sketch, at which point the sketch may be saved as an
-              SVG file.
+              This is then improved with Quiescience search, which will conditionally search the game tree more deeply based on how volatile a position
+              appears to be - this avoids the 'horizon effect', where a position is inaccurately judged by a search with fixed depth because a game
+              changing move was 'just over the horizon' and out of sight.
             </h3>
             <h3 class="lead">
-              In addition, this project explored the viability of transfer learning within the Sketch-RNN framework by comparing training results on
-              pre-trained models to results on fresh models.
+                Additionally, note that an exhaustive search will search the same game state several times; often the same moves may be made in a different
+                sequence, and so there are multiple ways to reach a particular position. To that end, transposition tables allow previous evaluations of
+                positions to be used to prevent redundant calculations. This is implemented with a hash table, where Zobrist hashing allows extremely fast
+                calculations of the table keys.
+            </h3>
+            <h3 class="lead">
+                Finally, the static evaluations of a given position are calculated by using a piece-square table to adapt the estimated score of a given piece
+                according to its position on the board. The values of these tables were populated by using a genetic algorithm to find the optimal scores.
             </h3>
           </div>
         </div>
@@ -202,20 +191,12 @@
         <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
           <div class="accordion-body">
             <h3 class="lead">
-            The final application had the ability to generate quality images while adapting the features according to the user preferences. However, one
-            caveat is that user selections could lead the latent space into extreme values, meaning low quality images would occasionally be generated.
-            In hindsight, this flaw could be fixed by normalising the latent space values in order to deter focal points with extreme values.
+              The results of this project were a decent chess engine alongside a much-improved one. The newer engine showcases both a much higher code
+              quality and overall project organisation, and an AI which beats a much higher percentile of the population.
             </h3>
             <h3 class="lead">
-              As for the transfer learning module of the project, this was found to be successful and potentially useful for certain applications. Transfer
-              learning was found to give a large head-start to models, however fresh models would catch up after around three hours of training. This means
-              it could be useful to facilitate rapid development of different models to fit certain styles and subjects, however would not be necessary for
-              regular use.
-            </h3>
-            <h3 class="lead">
-              Overall this project was marked as a first-class dissertation.
-              The paper written for this project may be found <a href="assets/diss.pdf" target="_blank">here</a>, and the github repository for the
-              application and transfer learning module may be found <a href="https://github.com/roryn959/Sketch-Generation-Tool">here</a>.
+                The repositories for these engines are available in <a href="https://github.com/roryn959/Python-Knifefish">Python</a> and
+                <a href="https://github.com/roryn959/Java-Knifefish">Java</a>.
             </h3>
           </div>
         </div>
@@ -230,19 +211,10 @@
         <div id="sketchAppCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="assets/images/mainwindow_app.png" class="d-block w-100" alt="Main window">
+              <img src="assets/images/chessMove1.png" class="d-block w-100" alt="Chess move two">
             </div>
             <div class="carousel-item">
-              <img src="assets/images/good_latent_space.png" class="d-block w-100" alt="Good latent space">
-            </div>
-            <div class="carousel-item">
-              <img src="assets/images/genwindow_app.png" class="d-block w-100" alt="Generation window">
-            </div>
-            <div class="carousel-item">
-              <img src="assets/images/graph_sr.png" class="d-block w-100" alt="Transfer learning loss graph">
-            </div>
-            <div class="carousel-item">
-              <img src="assets/images/Sketch Application FlowChart.png" class="d-block w-100" alt="App flow chart">
+              <img src="assets/images/chessMove2.png" class="d-block w-100" alt="Chess move one">
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#sketchAppCarousel" data-bs-slide="prev">
