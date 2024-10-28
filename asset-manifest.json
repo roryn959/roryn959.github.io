@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.81b48a7f.css",
+    "main.js": "/static/js/main.c8595be2.js",
+    "static/media/graph_sr.png": "/static/media/graph_sr.e6f2f23877e0cad0ebac.png",
+    "static/media/good_latent_space.png": "/static/media/good_latent_space.0c0f41a8a88efd4fafd9.png",
+    "static/media/genwindow_app.png": "/static/media/genwindow_app.63c157b69628ec74e422.png",
+    "static/media/mainwindow_app.png": "/static/media/mainwindow_app.cdae3be7461a8a57a70c.png",
+    "static/media/Sketch Application FlowChart.png": "/static/media/Sketch Application FlowChart.7d329892cd69e4704319.png",
+    "static/media/docker.png": "/static/media/docker.6bc8607de8327c5d5003.png",
+    "static/media/chessMove1.png": "/static/media/chessMove1.e2f1e1397bf0d15c270d.png",
+    "static/media/chessMove2.png": "/static/media/chessMove2.961dc06b0b7606de352e.png",
+    "static/media/react.png": "/static/media/react.50c366299e5e3cc3a890.png",
+    "static/media/html.png": "/static/media/html.22ec3220719446266714.png",
+    "static/media/spring.jpeg": "/static/media/spring.50a628da9f652a22993d.jpeg",
+    "static/media/haskell.png": "/static/media/haskell.00ab3e44fbe5f8d545c2.png",
+    "static/media/angular.png": "/static/media/angular.8807829c44791fae5cbb.png",
+    "static/media/linkedin.png": "/static/media/linkedin.9dfdc9701c0e1eb622bb.png",
+    "static/media/python.png": "/static/media/python.41259ded83ae0f2a4243.png",
+    "static/media/tf.png": "/static/media/tf.3e7c926678403065937a.png",
+    "static/media/azure.png": "/static/media/azure.6e06c048b84b463cc4ab.png",
+    "static/media/ixn.jpeg": "/static/media/ixn.1ecc8fb01b02d30bf21b.jpeg",
+    "static/media/js.png": "/static/media/js.e86639f10ef8abc0a33c.png",
+    "static/media/swift.png": "/static/media/swift.d0cf8dd3a99e6de3edc6.png",
+    "static/media/mail.png": "/static/media/mail.647bb52528e6a0ce522c.png",
+    "static/media/java.svg": "/static/media/java.2c5d38eae4a3a352dd64b4fe904a14dd.svg",
+    "static/media/github.svg": "/static/media/github.7d6b7d8513e06be0a531dc9303e0bafe.svg",
+    "index.html": "/index.html",
+    "main.81b48a7f.css.map": "/static/css/main.81b48a7f.css.map",
+    "main.c8595be2.js.map": "/static/js/main.c8595be2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.81b48a7f.css",
+    "static/js/main.c8595be2.js"
+  ]
+}
