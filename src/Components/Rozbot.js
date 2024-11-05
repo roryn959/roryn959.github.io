@@ -1,11 +1,11 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import useAI from '../Hooks/useAI';
 
 
 const Rozbot = () => {
     const [conversation, setConversation] = useState([{role: 'system', content: "Hello, I'm Rozbot! I am a language model trained to answer questions you have about Rory."}]);
-    const { aiResponse, pending, error } = useAI(conversation);
+    const { aiResponse, error } = useAI(conversation);
     const [response, setResponse] = useState('');
 
     const handleTextSubmit = (e) => {
@@ -15,7 +15,14 @@ const Rozbot = () => {
         } else {
             setConversation([...conversation, {role: 'user', content: response}]);
         }
+        setResponse('');
     }
+
+    useEffect(() => {
+        if (conversation.length>1){
+            document.getElementById('chatInput').focus();
+        }
+    }, [aiResponse]);
 
     return ( 
         <div className='rozbot m-4 '>
@@ -44,6 +51,7 @@ const Rozbot = () => {
                                         placeholder='your response...'
                                         value={response}
                                         onChange={(e)=>{setResponse(e.target.value)}}
+                                        id='chatInput'
                                     />
                                     <input type='submit' hidden/>
                                 </form>

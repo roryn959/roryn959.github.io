@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 
 const useAI = (conversation) => {
     const [aiResponse, setAiResponse] = useState(null);
-    const [pending, setPending] = useState(false);
     const [error, setError] = useState(null);
 
     const prompt = ChatPromptTemplate.fromMessages([
@@ -34,11 +33,8 @@ const useAI = (conversation) => {
     useEffect(() => {
         
         const fetchResponse = async () => {
-            setPending(true);
             const response = await chain.invoke({messages: conversation});
-            console.log(response.content);
             setAiResponse(response.content);
-            setPending(false);
         }
         setAiResponse(null);
         if (conversation.length>1){
@@ -47,7 +43,7 @@ const useAI = (conversation) => {
     }, [conversation]);
 
 
-    return { aiResponse, pending, error };
+    return { aiResponse, error };
 }
  
 export default useAI;
