@@ -4,7 +4,7 @@ import useAI from '../Hooks/useAI';
 
 
 const Rozbot = () => {
-    const [conversation, setConversation] = useState([{role: 'system', content: "Hi I'm Rozbot. I'm an AI Chatbot"}]);
+    const [conversation, setConversation] = useState([{role: 'system', content: "Hello, I'm Rozbot! I am a language model trained to answer questions you have about Rory."}]);
     const { aiResponse, pending, error } = useAI(conversation);
     const [response, setResponse] = useState('');
 
