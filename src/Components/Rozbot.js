@@ -19,8 +19,9 @@ const Rozbot = () => {
     }
 
     useEffect(() => {
-        if (conversation.length>1){
-            document.getElementById('chatInput').focus();
+        const element = document.getElementById('chatInput')
+        if (conversation.length>1 && !!element){
+            element.focus();
         }
     }, [aiResponse]);
 
@@ -29,7 +30,7 @@ const Rozbot = () => {
             <Container fluid className='p-0'>
                 <h2 className='m-3'>Rozbot</h2>
                 <div className='p-0 overflow-scroll' style={{'maxHeight': '100vh'}}>
-                    <ul className='list-group'>
+                    <ul className='list-group border border-outline'>
                         {
                             conversation.map((msg, i) => (
                                 <li key={i} className={`list-group-item` + (i%2!==0 ? ` text-end` : ` bg-body-tertiary`)}>{msg.content}</li>
