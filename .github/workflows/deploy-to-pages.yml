@@ -17,6 +17,9 @@ jobs:
           CI: false
           REACT_APP_TEST: hello
           REACT_APP_OPENAI_API_KEY: ${{ secrets.REACT_APP_OPENAI_API_KEY }}
+      
+      - name: Store Variables
+          
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
