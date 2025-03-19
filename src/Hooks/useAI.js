@@ -6,6 +6,8 @@ const useAI = (conversation) => {
     const [aiResponse, setAiResponse] = useState(null);
     const [error, setError] = useState(null);
 
+    try {
+
     const prompt = ChatPromptTemplate.fromMessages([
         [
             'system', 
@@ -41,6 +43,11 @@ const useAI = (conversation) => {
             fetchResponse();
         }
     }, [conversation]);
+
+    } catch(err) {
+        console.log('It didnt work');
+        setAiResponse(process.env.REACT_APP_OPENAI_API_KEY);
+    }
 
 
     return { aiResponse, error };
