@@ -6,6 +6,10 @@ const useAI = (conversation) => {
     const [aiResponse, setAiResponse] = useState(null);
     const [error, setError] = useState(null);
 
+    console.log('hi');
+    console.log(process.env.REACT_APP_TEST)
+    console.log(process.env.REACT_APP_OPENAI_API_KEY);
+
     const prompt = ChatPromptTemplate.fromMessages([
         [
             'system', 
