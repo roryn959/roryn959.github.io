@@ -16,7 +16,7 @@ jobs:
         env:
           CI: false
           REACT_APP_TEST: hello
-          REACT_APP_OPENAI_API_KEY: ${{ secrets.REACT_APP_OPENAI_API_KEY }}
+          REACT_APP_OPENAI_API_KEY: key
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
