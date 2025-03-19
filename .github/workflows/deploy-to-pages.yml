@@ -13,11 +13,11 @@ jobs:
       - name: Build
         run: |
           npm install
+          touch .env
+          echo 'REACT_APP_DEV_SERVER_URL=${{ secrets.REACT_APP_OPENAI_API_KEY }}' >> .env
           npm run-script build
         env:
           CI: false
-          REACT_APP_TEST: ${{ secrets.REACT_APP_TEST }}
-          REACT_APP_OPENAI_API_KEY: ${{ secrets.REACT_APP_OPENAI_API_KEY }}
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
