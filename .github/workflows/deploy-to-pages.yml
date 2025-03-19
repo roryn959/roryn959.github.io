@@ -12,6 +12,7 @@ jobs:
       - name: Build
         run: |
           npm install
+          echo "window._env_ = { REACT_APP_OPENAI_API_KEY '${{ secrets.REACT_APP_OPENAI_API_KEY }}' };" > ./public/env-config.js
           npm run-script build
         env:
           CI: false
@@ -32,9 +33,7 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Create Runtime Environment Config
-        run: |
-          echo "window._env_ = { REACT_APP_API_URL: '${{ secrets.REACT_APP_API_URL }}' };" > ./public/env-config.js
+      
 
       - name: Build React App
         run: npm run build
