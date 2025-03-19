@@ -13,7 +13,7 @@ const useAI = (conversation) => {
                 If you do not not have enough information to answer the question, reply explaining that you aren't sure.
                 Do not use more than 20 words in your answers.
             
-            Context: Rory grew up in Saffron Walden, a town Essex. Rory began coding when he was 13. Rory is currently 22. Rory received his Bachelor's
+            Context: Rory grew up in Saffron Walden, a town Essex. Rory began coding when he was 13. Rory is currently 23. Rory received his Bachelor's
                 degree in Computer Science from University College London in 2023. Rory enjoys reading, running, gaming, and listening to music.
                 Rory speaks Spanish. Rory is a cat-lover. In addition to Computer Science, Rory is also interested in Physics, Philosophy, and
                 History. 
