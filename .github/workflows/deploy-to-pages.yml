@@ -13,8 +13,6 @@ jobs:
       - name: Build
         run: |
           npm install
-          touch .env
-          echo 'REACT_APP_DEV_SERVER_URL=${{ secrets.REACT_APP_OPENAI_API_KEY }}' >> .env
           npm run-script build
         env:
           CI: false

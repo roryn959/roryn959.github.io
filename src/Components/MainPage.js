@@ -6,7 +6,6 @@ const MainPage = () => {
     return ( 
         <div className='mainPage'>
             <Introduction/>
-            <Rozbot/>
             <ProjectCards/>
         </div>
     );
