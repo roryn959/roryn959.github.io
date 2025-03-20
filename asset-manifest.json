@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.d221dc40.css",
-    "main.js": "/static/js/main.707f8bb2.js",
+    "main.js": "/static/js/main.66c72237.js",
     "static/media/graph_sr.png": "/static/media/graph_sr.e6f2f23877e0cad0ebac.png",
     "static/media/good_latent_space.png": "/static/media/good_latent_space.0c0f41a8a88efd4fafd9.png",
     "static/media/genwindow_app.png": "/static/media/genwindow_app.63c157b69628ec74e422.png",
     "static/media/mainwindow_app.png": "/static/media/mainwindow_app.cdae3be7461a8a57a70c.png",
     "static/media/Sketch Application FlowChart.png": "/static/media/Sketch Application FlowChart.7d329892cd69e4704319.png",
     "static/media/docker.png": "/static/media/docker.6bc8607de8327c5d5003.png",
+    "static/media/wwyna_list.png": "/static/media/wwyna_list.26c3dc05bce785fd0e0a.png",
     "static/media/chessMove1.png": "/static/media/chessMove1.e2f1e1397bf0d15c270d.png",
     "static/media/chessMove2.png": "/static/media/chessMove2.961dc06b0b7606de352e.png",
     "static/media/react.png": "/static/media/react.50c366299e5e3cc3a890.png",
@@ -27,10 +28,10 @@
     "static/media/github.svg": "/static/media/github.7d6b7d8513e06be0a531dc9303e0bafe.svg",
     "index.html": "/index.html",
     "main.d221dc40.css.map": "/static/css/main.d221dc40.css.map",
-    "main.707f8bb2.js.map": "/static/js/main.707f8bb2.js.map"
+    "main.66c72237.js.map": "/static/js/main.66c72237.js.map"
   },
   "entrypoints": [
     "static/css/main.d221dc40.css",
-    "static/js/main.707f8bb2.js"
+    "static/js/main.66c72237.js"
   ]
 }
