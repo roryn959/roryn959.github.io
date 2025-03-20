@@ -1,10 +1,11 @@
 import sketch_window from '../assets/images/mainwindow_app.png';
 import ixn from '../assets/images/ixn.jpeg';
 import chess from '../assets/images/chessMove1.png';
+import wwyna from '../assets/images/wwyna_list.png';
 
 const ProjectCards = () => {
     return ( 
-        <div className="row row-cols-1 row-cols-md-3 g-4 m-4">
+        <div className="row row-cols-1 row-cols-md-4 g-4 m-4">
             <div className="col">
                 <div className="card p-2">
                     <img src={sketch_window} alt="Sketch Application"/>
@@ -33,6 +34,21 @@ const ProjectCards = () => {
             </div>
             <div className="col">
                 <div className="card p-2">
+                    <img src={wwyna} alt="What Was Your Name Again?"/>
+                    <div className="card-body">
+                        <h5 className="card-title">What Was Your Name Again?</h5>
+                        <p className="card-text">
+                            This project aimed to solve issues faced by those with social anxiety. In people who get nervous during
+                            socialising the anxious response may inhibit memory, causing countless forgotten names and misremembered
+                            careers. This webapp allows people to make notes on the information they learned so that they can avoid
+                            such awkward moments.
+                        </p>
+                        <a href="https://what-was-your-name-again.onrender.com" className="btn btn-outline-primary">See more</a>
+                    </div>
+                </div>
+            </div>
+            <div className="col">
+                <div className="card p-2">
                     <img src={chess} alt="Knifefish chess engine"/>
                     <div className="card-body">
                         <h5 className="card-title">Knifefish</h5>
@@ -44,7 +60,7 @@ const ProjectCards = () => {
                     </div>
                 </div>
             </div>
-            </div>
+        </div>
     );
 }
  

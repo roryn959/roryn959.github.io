@@ -8,8 +8,6 @@ import SketchApp from './Components/SketchApp';
 import Knifefish from './Components/Knifefish';
 
 function App() {
-  console.log('hi');
-  console.log(process.env.REACT_APP_OPENAI_API_KEY);
   return (
     <Router>
       <div className="App">
