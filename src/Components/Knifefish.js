@@ -1,4 +1,4 @@
-import { Accordion } from "react-bootstrap";
+import { Accordion, Carousel, Image } from "react-bootstrap";
 
 import chessMove1 from "../assets/images/chessMove1.png";
 import chessMove2 from "../assets/images/chessMove2.png";
@@ -64,26 +64,24 @@ const Knifefish = () => {
                 </Accordion.Item>
             </Accordion>
 
-            <div class="container my-4">
-                <div class="w-50 mx-auto" style={{'height': '700px !important'}}>
-                    <div id="sketchAppCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src={chessMove1} class="d-block w-100" alt="Chess move two"/>
-                            </div>
-                            <div class="carousel-item">
-                                <img src={chessMove2} class="d-block w-100" alt="Chess move one"/>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#sketchAppCarousel" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#sketchAppCarousel" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
+            <div className="container my-4">
+                <div className='w-50 mx-auto' style={{'height': '700px !important'}}>
+                    <Carousel className='carousel-dark slide'>
+                        <Carousel.Item>
+                            <Image
+                                src={ chessMove1 }
+                                className='d-block w-100'
+                                alt='Main window'
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <Image
+                                src={ chessMove2 }
+                                className='d-block w-100'
+                                alt='Main window'
+                            />
+                        </Carousel.Item>
+                    </Carousel>
                 </div>
             </div>
         </div>

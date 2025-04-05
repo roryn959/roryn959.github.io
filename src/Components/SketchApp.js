@@ -4,7 +4,7 @@ import genWindowApp from "../assets/images/genwindow_app.png";
 import graphSR from "../assets/images/graph_sr.png";
 import sketchAppFlowchart from "../assets/images/Sketch Application FlowChart.png";
 
-import { Accordion } from "react-bootstrap";
+import { Accordion, Carousel, Image } from "react-bootstrap";
 
 const SketchApp = () => {
     return ( 
@@ -93,34 +93,44 @@ const SketchApp = () => {
             </Accordion>
 
             <div className="container my-4">
-                <div className="w-50 mx-auto" style={{'height': '700px !important'}}>
-                    <div id="sketchAppCarousel" className="carousel carousel-dark slide" data-bs-ride="carousel">
-                        <div className="carousel-inner">
-                            <div className="carousel-item active">
-                                <img src={mainWindow} className="d-block w-100" alt="Main window"/>
-                            </div>
-                            <div className="carousel-item">
-                                <img src={goodLatentSpace} className="d-block w-100" alt="Good latent space"/>
-                            </div>
-                            <div className="carousel-item">
-                                <img src={genWindowApp} className="d-block w-100" alt="Generation window"/>
-                            </div>
-                            <div className="carousel-item">
-                                <img src={graphSR} className="d-block w-100" alt="Transfer learning loss graph"/>
-                            </div>
-                            <div className="carousel-item">
-                                <img src={sketchAppFlowchart} className="d-block w-100" alt="App flow chart"/>
-                            </div>
-                        </div>
-                        <button className="carousel-control-prev" type="button" data-bs-target="#sketchAppCarousel" data-bs-slide="prev">
-                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span className="visually-hidden">Previous</span>
-                        </button>
-                        <button className="carousel-control-next" type="button" data-bs-target="#sketchAppCarousel" data-bs-slide="next">
-                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span className="visually-hidden">Next</span>
-                        </button>
-                    </div>
+                <div className='w-50 mx-auto' style={{'height': '700px !important'}}>
+                    <Carousel className='carousel-dark slide'>
+                        <Carousel.Item>
+                            <Image
+                                src={ mainWindow }
+                                className='d-block w-100'
+                                alt='Main window'
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <Image
+                                src={ goodLatentSpace }
+                                className='d-block w-100'
+                                alt='Main window'
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <Image
+                                src={ genWindowApp }
+                                className='d-block w-100'
+                                alt='Main window'
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <Image
+                                src={ graphSR }
+                                className='d-block w-100'
+                                alt='Main window'
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <Image
+                                src={ sketchAppFlowchart }
+                                className='d-block w-100'
+                                alt='Main window'
+                            />
+                        </Carousel.Item>
+                    </Carousel>
                 </div>
             </div>
         </div>
