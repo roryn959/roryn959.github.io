@@ -13,8 +13,8 @@ function App() {
       <div className="App">
           <NavComponent/>
           <Routes>
-            <Route path='knifefish' element={<Knifefish/>} />
-            <Route path='sketchApp' element={<SketchApp/>}/>
+            <Route path='/knifefish' element={<Knifefish/>} />
+            <Route path='/sketchApp' element={<SketchApp/>}/>
             <Route path='*' element={<MainPage/>}/>
           </Routes>
       </div>
