@@ -15,7 +15,7 @@ const ProjectCards = () => {
                             reinterpret sketches based on user preference. Leverages a bidirectional sequence-to-sequence variational
                             autoencoder and transfer learning.
                         </p>
-                        <a href="sketchApp" className="btn btn-outline-primary">See more</a>
+                        <a href="/#/sketchApp" className="btn btn-outline-primary">See more</a>
                     </div>
                 </div>
             </div>
@@ -56,7 +56,7 @@ const ProjectCards = () => {
                             rating of ~1400 and ~1600 in the respective languages using techniques including Minimax with Alphabeta
                             pruning, Quiescience search, dynamic evalutaion, transposition tables, and Zobrist hashing.
                         </p>
-                        <a href="knifefish" className="btn btn-outline-primary">See more</a>
+                        <a href="/#/knifefish" className="btn btn-outline-primary">See more</a>
                     </div>
                 </div>
             </div>
