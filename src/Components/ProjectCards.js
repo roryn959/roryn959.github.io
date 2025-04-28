@@ -54,7 +54,7 @@ const ProjectCards = () => {
                         <h5 className="card-title">Knifefish</h5>
                         <p className="card-text">A chess engine originally written using Python, and later re-written into Java. Achieves a
                             rating of ~1400 and ~1600 in the respective languages using techniques including Minimax with Alphabeta
-                            pruning, Quiescience search, dynamic evalutaion, transposition tables, and Zobrist hashing.
+                            pruning, Quiescience search, dynamic evaluation, transposition tables, and Zobrist hashing.
                         </p>
                         <a href="/#/knifefish" className="btn btn-outline-primary">See more</a>
                     </div>
